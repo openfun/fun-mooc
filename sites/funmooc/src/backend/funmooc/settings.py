@@ -292,6 +292,7 @@ class Base(StyleguideMixin, DRFMixin, RichieCoursesConfigurationMixin, Configura
                     "django.template.context_processors.static",
                     "cms.context_processors.cms_settings",
                     "richie.apps.core.context_processors.site_metas",
+                    "base.context_processors.marketing_metas",
                 ],
                 "loaders": [
                     "django.template.loaders.filesystem.Loader",
@@ -566,6 +567,11 @@ class Base(StyleguideMixin, DRFMixin, RichieCoursesConfigurationMixin, Configura
             }
         },
     }
+
+    # Marketing
+    MARKETING_SITE_ID = values.Value(
+        None, environ_name="MARKETING_SITE_ID", environ_prefix=None
+    )
 
     # Demo
     RICHIE_DEMO_SITE_DOMAIN = "localhost:8080"

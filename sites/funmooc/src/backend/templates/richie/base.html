@@ -20,3 +20,7 @@
 {% endblock topbar_contact %}
 
 {% block body_footer_title %}{% endblock body_footer_title %}
+{% block body_js %}
+    <script type="text/javascript">window.__funmooc_marketing_context__ = JSON.parse('{{ MARKETING_CONTEXT|safe }}');</script>
+    <script type="text/javascript" src="{% static 'funmooc/js/xiti.js' %}"></script>
+{% endblock body_js %}

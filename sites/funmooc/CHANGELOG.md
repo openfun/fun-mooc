@@ -8,6 +8,10 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+- Enable Xiti traffic analytic
+
 ## [1.1.0] - 2021-03-05
 
 ### Added
